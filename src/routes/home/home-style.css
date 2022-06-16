@@ -1,3 +1,11 @@
 main {
-  margin-top: 10vh;
+  padding-top: 90px;
+  padding-bottom: 20px;
+  min-height: 90vh;
+  margin: 0 2rem;
+  text-align: justify;
+}
+
+p {
+  margin-bottom: 1rem;
 }
