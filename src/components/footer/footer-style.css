@@ -1,0 +1,22 @@
+footer {
+  background-color: var(--primary-bg);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  min-height: 10vh;
+  align-self: center;
+  align-content: center;
+  align-items: center;
+  margin: auto 0;
+  height: 5vh;
+}
+
+h2 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
