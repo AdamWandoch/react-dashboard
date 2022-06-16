@@ -1,8 +1,15 @@
-ul {
-  text-align: center;
-}
-
+nav,
+h1,
+ul,
 li {
   display: inline;
-  margin: 0 1rem;
+  padding: 0.2rem;
+}
+
+nav {
+  position: absolute;
+  top: 30%;
+  right: 0.5rem;
+  padding-left: 2rem;
+  /* margin-bottom: 2rem; */
 }
