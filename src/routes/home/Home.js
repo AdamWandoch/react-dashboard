@@ -1,68 +1,16 @@
 import React from 'react';
 import './home-style.css';
+import { generateParagraphs } from '../../helpers/generateParagraphs';
+
+const paragraphs = generateParagraphs(3);
 
 export const Home = () => {
-  const paragraphs = [{}, {}, {}];
-
   return (
     <main>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi corrupti
-        voluptatem fugit ratione est excepturi voluptate delectus id saepe
-        laborum quam debitis error, mollitia, enim iure quaerat, vel veritatis
-        autem. Aliquid praesentium rem voluptatem veniam, sunt molestias quos.
-        Possimus facilis expedita vitae dignissimos reprehenderit, beatae labore
-        magnam cumque minima natus perferendis eaque mollitia ipsum cum
-        exercitationem fugiat hic nisi molestiae nobis id fuga ipsam sed alias?
-        Error ipsa, pariatur repudiandae alias harum minima debitis enim
-        aliquid, animi quidem inventore iure aperiam omnis reprehenderit
-        mollitia doloremque culpa quis placeat aut! Soluta obcaecati incidunt
-        natus. Suscipit dolor officia quasi ea nemo magnam voluptate fugiat
-        aliquam doloribus. Cupiditate repellat, iste totam quidem recusandae
-        explicabo ad! Nam neque beatae hic cupiditate dicta, unde error
-        laudantium magni numquam omnis vero sapiente soluta repellat aliquam
-        dolorem nostrum ea ullam suscipit odit mollitia. Libero minus ducimus
-        sint, eveniet illo, aliquam distinctio molestiae aperiam earum nostrum,
-        adipisci eligendi!
-      </p>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi corrupti
-        voluptatem fugit ratione est excepturi voluptate delectus id saepe
-        laborum quam debitis error, mollitia, enim iure quaerat, vel veritatis
-        autem. Aliquid praesentium rem voluptatem veniam, sunt molestias quos.
-        Possimus facilis expedita vitae dignissimos reprehenderit, beatae labore
-        magnam cumque minima natus perferendis eaque mollitia ipsum cum
-        exercitationem fugiat hic nisi molestiae nobis id fuga ipsam sed alias?
-        Error ipsa, pariatur repudiandae alias harum minima debitis enim
-        aliquid, animi quidem inventore iure aperiam omnis reprehenderit
-        mollitia doloremque culpa quis placeat aut! Soluta obcaecati incidunt
-        natus. Suscipit dolor officia quasi ea nemo magnam voluptate fugiat
-        aliquam doloribus. Cupiditate repellat, iste totam quidem recusandae
-        explicabo ad! Nam neque beatae hic cupiditate dicta, unde error
-        laudantium magni numquam omnis vero sapiente soluta repellat aliquam
-        dolorem nostrum ea ullam suscipit odit mollitia. Libero minus ducimus
-        sint, eveniet illo, aliquam distinctio molestiae aperiam earum nostrum,
-        adipisci eligendi!
-      </p>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi corrupti
-        voluptatem fugit ratione est excepturi voluptate delectus id saepe
-        laborum quam debitis error, mollitia, enim iure quaerat, vel veritatis
-        autem. Aliquid praesentium rem voluptatem veniam, sunt molestias quos.
-        Possimus facilis expedita vitae dignissimos reprehenderit, beatae labore
-        magnam cumque minima natus perferendis eaque mollitia ipsum cum
-        exercitationem fugiat hic nisi molestiae nobis id fuga ipsam sed alias?
-        Error ipsa, pariatur repudiandae alias harum minima debitis enim
-        aliquid, animi quidem inventore iure aperiam omnis reprehenderit
-        mollitia doloremque culpa quis placeat aut! Soluta obcaecati incidunt
-        natus. Suscipit dolor officia quasi ea nemo magnam voluptate fugiat
-        aliquam doloribus. Cupiditate repellat, iste totam quidem recusandae
-        explicabo ad! Nam neque beatae hic cupiditate dicta, unde error
-        laudantium magni numquam omnis vero sapiente soluta repellat aliquam
-        dolorem nostrum ea ullam suscipit odit mollitia. Libero minus ducimus
-        sint, eveniet illo, aliquam distinctio molestiae aperiam earum nostrum,
-        adipisci eligendi!
-      </p>
+      {paragraphs.map((p, index) => {
+        console.log(index);
+        return <p key={index}>{p}</p>;
+      })}
     </main>
   );
 };
