@@ -1,6 +1,27 @@
-.status {
-  border: solid 1px;
-  padding: 0.5rem;
-  margin: 0.5rem;
-  max-width: 400px;
+.statuses-wrapper {
+  display: grid;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 400px) {
+  .statuses-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 600px) {
+  .statuses-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 800px) {
+  .statuses-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 1000px) {
+  .statuses-wrapper {
+    grid-template-columns: repeat(6, 1fr);
+  }
 }
