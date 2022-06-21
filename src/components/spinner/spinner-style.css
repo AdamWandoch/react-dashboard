@@ -1,5 +1,5 @@
 .spinner {
-  animation: rotation 1s infinite linear;
+  animation: rotation 0.5s infinite steps(8);
   width: 10rem;
 }
 
