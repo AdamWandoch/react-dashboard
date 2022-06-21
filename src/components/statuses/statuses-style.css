@@ -20,7 +20,7 @@
     grid-template-columns: repeat(4, 1fr);
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 1400px) {
   .statuses-wrapper {
     grid-template-columns: repeat(6, 1fr);
   }

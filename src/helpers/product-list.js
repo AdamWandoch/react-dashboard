@@ -4,5 +4,5 @@ export const products = [
   'Profile LC',
   'Pipe S2',
   'Sprocket JJF',
-  'Hinge W-T'
-]
+  'Hinge W-T',
+];

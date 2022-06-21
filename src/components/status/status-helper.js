@@ -1,15 +1,22 @@
 import axios from 'axios';
 import { API_SAVE_URL } from '../../helpers/api_urls';
 
-export const start = async (id, lineName, sensor1temp, sensor2temp) => {
+export const start = async (
+  id,
+  lineName,
+  sensor1temp,
+  sensor2temp,
+  product,
+  rate
+) => {
   const state = {
     id: id,
     lineName: lineName,
     sensor1temp: sensor1temp,
     sensor2temp: sensor2temp,
     status: 'producing',
-    currentProduct: 'Bracket WSH',
-    outputRate: 22,
+    currentProduct: product,
+    outputRate: rate,
   };
   const response = await axios.post(API_SAVE_URL, state);
 };
